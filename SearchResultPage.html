@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/SearchResultPage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Search Result</title>
+  </head>
+  <body>
+    <div class="ReportDiv">
+      <div class="Navbar">
+        <div class="Logo">
+          <img src="Logo.png" alt="SecurifyLogo" id="logoImage" />
+          <h1 id="logoText"><strong>Securify</strong></h1>
+        </div>
+      </div>
+      <hr id="lineBreak" />
+      <div class="ReportPTS">
+        <h2 id="PTS">Showing report for "Prakul.Singh@utdallas.edu"</h2>
+      </div>
+      <div class="ReportContainer">
+        <div class="LogoSus">
+          <img src="RedLogo.png" alt="Red" id="redLogoImage" />
+          <div class="HighlySusDescription">
+            <h2 id="HighlySus">Highly Suspicious</h2>
+            <p id="recc">
+              <i>(We highly recommend to not interact with this email.)</i>
+            </p>
+          </div>
+        </div>
+        <div class="ImagesContainer">
+          <img src="482People.png" alt="482 People" id="people" />
+          <img src="CalendarLastSeen.png" alt="CalendarLastSeen" id="cal" />
+        </div>
+      </div>
+      <div class="DetailedReport">
+        <button class="ReportButton">
+          <span id="reportText">Report Malicious Intent</span>
+        </button>
+      </div>
+      <hr id="lineBreak4" />
+      <div class="DisclaimerDiv">
+        <p id="disclaimer">
+          🔒 We do not save any personally identifiable information. Nobody, not
+          even Securify, has access to or may view your personal information.
+          <span>Click here to learn more.</span>
+        </p>
+      </div>
+    </div>
+    <script src="Scripts/SearchResultPage.js"></script>
+  </body>
+</html>

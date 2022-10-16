@@ -1,0 +1,34 @@
+{
+    "name": "Securify",
+    "version": "1.0.0",
+    "description": "Add an extra layer of security for your e-endeavors with Securify, an extension that identifies suspicious emails or links!",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "Securify_Logo.png",
+        "default_popup": "index.html",
+        "default_title": "Secure your information"
+    },
+    "icons": {
+        "128": "Securify_Logo.png"
+    },
+    "author": "Securify.inc",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": ["http://localhost:3000/*"],
+    "content_scripts": [
+        {
+          "matches": ["https://mail.google.com/*"],
+          "js": ["script.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "Green_Logo.png", "Logo_Neutral.png", "Logo_Suspicious.png", "Logo_Slight.png" ],
+            "matches": ["https://mail.google.com/*"]
+        }
+   ]
+}

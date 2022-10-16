@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/Verification.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="HomeDiv">
+      <div class="Navbar">
+        <div class="Logo">
+          <img src="Logo.png" alt="SecurifyLogo" id="logoImage" />
+          <h1 id="logoText"><strong>Securify</strong></h1>
+        </div>
+      </div>
+      <hr id="lineBreak" />
+      <div class="GoBack">
+        <button class="BackButton" id="back_button">
+          <img src="back_button.png" alt="Go back" id="backImage" />
+        </button>
+        <h1 id="backImageText">Report Malicious Intent</h1>
+      </div>
+      <h3 id="enterCode">Enter Verification Code</h3>
+      <div class="VerificationCodeText">
+        <div class="Code1"><input type="text" id="Code1"/></div>
+        <div class="Code2"><input type="text" id="Code2"/></div>
+        <div class="Code3"><input type="text" id="Code3"/></div>
+        <div class="Code4"><input type="text" id="Code4"/></div>
+      </div>
+      <div class="NoCode">
+        <h3 id="didNot">Didn't receive code? <span>Resend</span></h3>
+      </div>
+      <div class="ReportDiv" id="reportButton">
+        <button class="ReportButton">
+          <span id="reportText">Report Malicious Intent</span>
+        </button>
+      </div>
+      <hr id="lineBreak4" />
+      <div class="DisclaimerDiv">
+        <p id="disclaimer">
+          We do not save any personally identifiable information. Nobody, not
+          even Securify, has access to or may view your personal information.
+          <span>Click here to learn more.</span>
+        </p>
+      </div>
+    </div>
+    <script src="Scripts/Verification.js"></script>
+  </body>
+</html>
